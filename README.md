@@ -4,3 +4,5 @@ Grupo 31
 Componentes:
 	Guillermo Rivero Rodríguez
 	María Rojas Estévez
+	
+Desarrollo:
