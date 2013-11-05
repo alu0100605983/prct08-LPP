@@ -1,4 +1,4 @@
-load "lib/matrices.rb"
+require "lib/matrices.rb"
 
 describe Matriz do 
 	before :each do
