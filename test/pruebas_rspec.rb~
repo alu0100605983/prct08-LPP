@@ -1,0 +1,14 @@
+require "lib/matrices.rb"
+
+describe Matriz do 
+	before :each do
+		@n1 = Matriz.new()
+	end
+	
+	describe "Almacenamiento de posiciones" do 
+	it " " do
+	end
+
+
+	end
+end
