@@ -25,15 +25,19 @@ class Matriz
 			puts "\n"
 		end
 	end
- 
+	
+	def rellenarAleatorio
+		for i in 0...@fil
+			for j in 0...@col
+				@mat[i][j] = rand(10)
+			end
+		end
+	end 
 end
 
 
-m = Matriz.new(2,2)
-m.insertar(1,0,0)
-m.insertar(1,1,1)
-m.insertar(0,0,4)
-m.insertar(0,1,3)
+m = Matriz.new(30,20)
+m.rellenarAleatorio
 puts "Contenido posicion 1,1"
 m.mostrar
 
