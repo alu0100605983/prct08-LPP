@@ -36,8 +36,8 @@ class Matriz
 end
 
 
-m = Matriz.new(30,20)
+m = Matriz.new(5,5)
 m.rellenarAleatorio
-puts "Contenido posicion 1,1"
+puts "Mostrar contenido de la matriz"
 m.mostrar
 
