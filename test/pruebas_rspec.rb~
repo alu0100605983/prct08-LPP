@@ -1,5 +1,5 @@
-load "lib/matrices.rb"
-
+require "./../lib/matrices.rb"
+require "./../lib/fraccion.rb"
 
 describe Matriz do 
 	before :each do

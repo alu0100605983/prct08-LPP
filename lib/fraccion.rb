@@ -10,11 +10,11 @@ class Fraccion #Clase Fraccion
 	end
 	
 	
-	def num()	#Metodo get para el numerador
+	def num	#Metodo get para el numerador
 		@num
 	end
 
-	def den()	#Metodo get para el denominador
+	def den	#Metodo get para el denominador
 		@den
 	end
 
@@ -70,7 +70,7 @@ class Fraccion #Clase Fraccion
 	
 
 	def +(other) #Suma de fracciones
-		simpl(Fraccion.new(@num * other.den + other.num * @den, @den * other.den))
+		simpl(Fraccion.new(self.num * other.den + other.num * self.den, self.den * other.den))
 	end
  
    

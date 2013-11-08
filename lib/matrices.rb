@@ -1,4 +1,4 @@
-require 'fraccion.rb'
+load 'fraccion.rb'
 
 class Matriz 
 
@@ -48,14 +48,15 @@ class Matriz
 			mult = Matriz.new(@fil, other.col)
 			for i in (0...mult.fil)
 				for j in (0...mult.col)
-					mult.mat[i][j]=0
+					mult.mat[i][j]= Fraccion.new(0,1)
 				end
 			end
 
 			for i in (0... @fil)
 				for j in (0... other.col)
 					for k in (0... other.col)
-						mult.mat[i][j] += (self.mat[i][k] * other.mat[k][j])
+						mult[i][j] = mult[i][j] + (@mat[i][k] * other.mat[k][j])
+					
 					end
 				end
 			end
@@ -74,15 +75,4 @@ class Matriz
 end
 
 
-m = Matriz.new(2,2)
-m.rellenarAleatorio
-puts "Mostrar contenido de la matriz m"
-m.mostrar
 
-a = Matriz.new(2,2)
-a.rellenarAleatorio
-puts "Mostrar contenido de la matriz a"
-a.mostrar
-
-aux = a.multi(m)
-aux.mostrar
