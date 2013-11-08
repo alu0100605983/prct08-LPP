@@ -8,7 +8,11 @@ task :default => :tu
 
 desc "Pruebas unitaria de la clase matriz"
 task :tu do
+<<<<<<< HEAD
 	sh "rspec ./test/pruebas_rspec.rb"
+=======
+	sh "rspec test/pruebas_rspec.rb"
+>>>>>>> 7e447c343eb56b4264bf98fa3686c4522ce68b80
 end
 
 desc "Archivo binario"
