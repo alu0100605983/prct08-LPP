@@ -1,5 +1,3 @@
-require 'fraccion.rb'
-
 class Matriz 
 
 	attr_reader :fil, :col, :mat
@@ -56,6 +54,9 @@ class Matriz
 				for j in (0... other.col)
 					for k in (0... other.col)
 						mult.mat[i][j] += (self.mat[i][k] * other.mat[k][j])
+						#print mult[i][j]
+						#print @mat[i][j]
+						#print other.mat[k][j]
 					end
 				end
 			end
